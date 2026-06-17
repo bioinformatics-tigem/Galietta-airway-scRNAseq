@@ -1,0 +1,9 @@
+paths:
+  data_root: "data/processedH5Files"
+  results_dir: "results"
+  figures_dir: "results/figures"
+  anndata_dir: "results/anndata"
+  tables_dir: "results/tables"
+
+input:
+  h5_pattern: "{sample_id}*filtered*.h5"

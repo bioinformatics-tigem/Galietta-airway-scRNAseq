@@ -1,0 +1,5 @@
+sample_id,bio_sample,cf_status,condition,treatment,sample_ref
+BE63_NON_CF_NT,BE63,non_CF,NT,control,hg38
+BE73_NT,BE73,CF,NT,control,hg38
+BE63_NON_CF_TNFa_IL17,BE63,non_CF,TNFa_IL17,TNFa_IL17,hg38
+BE63_NON_CF_IFNa,BE63,non_CF,IFNa,IFNa,hg38
