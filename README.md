@@ -73,7 +73,7 @@ adata_nt = adata[adata.obs["sample_id"] == "BE63_NON_CF_NT"].copy()
 
 [`notebooks/SingleCell.ipynb`](notebooks/SingleCell.ipynb) documents the main workflow: reading the four 10x H5 files, QC, normalization, highly variable gene selection, PCA, nearest-neighbor graph construction, UMAP, Leiden clustering, manual cell-type annotation and example expression plots. The code and sample metadata are in `notebooks/` and `configs/`; package requirements are listed in [`requirements.txt`](requirements.txt).
 
-If you want to **explore the published annotations and figures**, start from the processed H5AD: you do not need to rerun clustering. The public notebook does not currently include every downstream analysis used in the paper, including the full Figure 1E co-expression analysis.
+If you want to **explore the published annotations and figures**, start from the processed H5AD: you do not need to rerun clustering. 
 
 If you want to **rerun the pipeline from the four 10x H5 files**, place them in the configured data directory (`data/processedH5Files`) and check the filename pattern in `configs/config.yaml`. Files downloaded directly from GEO have a `GSM..._` prefix, so the input pattern must be adapted (or the files renamed) before running the notebook. Run Jupyter from the repository root so relative data paths resolve correctly. Recomputed graph-based clusters may vary slightly across software environments; the GEO H5AD preserves the original labels and coordinates.
 
